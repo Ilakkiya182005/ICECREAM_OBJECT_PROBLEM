@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Inventory</title>
+    <link rel="stylesheet" href="ice.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ice Cream Inventory</h1>
+
+        
+        <div class="form-section">
+            <label>Flavor: <input type="text" id="flavorInput"></label><br>
+            <label>Price: <input type="number" id="priceInput" step="0.01"></label><br>
+            <label>Quantity: <input type="number" id="quantityInput"></label><br>
+            <button onclick="addIceCream()">Add Ice Cream</button>
+        </div>
+
+       
+        <ul id="inventoryList"></ul>
+        <h3 id="totalPrice">Total Price: $0.00</h3>
+        <h3 id="totalQuantity">Total Quantity: 0 pcs</h3>
+    </div>
+
+    <script src="ice.js"></script>
+</body>
+</html>
